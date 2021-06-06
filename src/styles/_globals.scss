@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap);
+@import "./variables";
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font;
+  background-color: $background;
+  color: $branco;
+}
+
+section {
+  padding: 0 1em;
+}

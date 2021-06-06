@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="405.5" height="155" viewBox="0 0 405.5 155">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #07f207;
+        font-size: 110px;
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #07f207;
+        stroke-width: 18px;
+      }
+    </style>
+  </defs>
+  <g id="Logo_Portfolio" data-name="Logo Portfolio" transform="translate(5105.5 -7670)">
+    <text id="I_Iorres" data-name="I Iorres" class="cls-1" transform="translate(-5082 7786)"><tspan x="0" y="0">I Iorres</tspan></text>
+    <line id="Linha_1" data-name="Linha 1" class="cls-2" x1="139" transform="translate(-5105.5 7699.5)"/>
+    <line id="Linha_2" data-name="Linha 2" class="cls-2" x1="34" transform="translate(-5074.5 7777.5)"/>
+  </g>
+</svg>

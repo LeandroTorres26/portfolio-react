@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $menu;
+  &__item {
+    color: $branco;
+    padding: 2em 0;
+    text-align: center;
+    &:hover,
+    &:focus {
+      background-color: $menu-hover;
+    }
+  }
+}
+
+.logo {
+  margin: 1em 0 0 1em;
+  width: 3em;
+  filter: brightness(90%);
+}

@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+.home {
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    width: 10ch;
+    margin-bottom: 1em;
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 1.6em;
+  }
+  &__cta {
+    background-color: $menu;
+    color: $destaque;
+    padding: 1em 2em;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: $menu-hover;
+      outline: $destaque 1px solid;
+    }
+  }
+}
