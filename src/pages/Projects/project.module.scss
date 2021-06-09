@@ -1,0 +1,28 @@
+.path a {
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.project {
+  display: grid;
+  justify-items: center;
+  gap: 0.5em;
+  &__name {
+    margin-top: 0.5em;
+  }
+  &__desc {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2em;
+  }
+  &__desktop,
+  &__mobile {
+    margin-top: 1.5em;
+    border-radius: 30px;
+  }
+  &__mobile {
+    width: 70%;
+  }
+}

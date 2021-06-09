@@ -9,12 +9,12 @@ const pageTransition = {
     y: "-100%",
   },
 };
-const Contact = () => {
+const About = () => {
   return (
-    <motion.section className={"contact"} initial="out" animate="in" exit="out" variants={pageTransition}>
-      <h1>Contact</h1>
+    <motion.section initial="out" animate="in" exit="out" variants={pageTransition}>
+      <h1>About</h1>
     </motion.section>
   );
 };
 
-export default Contact;
+export default About;

@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.Pbutton {
+  background-color: transparent;
+  border: 2px solid $branco;
+  color: $branco;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-family: $font;
+  transition: 0.2s all ease-in-out;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 2em $branco;
+    color: #000;
+  }
+}

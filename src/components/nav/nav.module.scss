@@ -1,12 +1,13 @@
 @import "../../styles/variables";
 .menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: $menu;
+  z-index: 5;
   &__item {
     color: $branco;
     padding: 2em 0;
