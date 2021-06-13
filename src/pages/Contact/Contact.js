@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Form from "../../components/ContactForm/ContactForm";
 const pageTransition = {
   in: {
     opacity: 1,
@@ -9,10 +10,12 @@ const pageTransition = {
     y: "-100%",
   },
 };
+
 const Contact = () => {
   return (
     <motion.section className={"contact"} initial="out" animate="in" exit="out" variants={pageTransition}>
       <h1>Contact</h1>
+      <Form />
     </motion.section>
   );
 };

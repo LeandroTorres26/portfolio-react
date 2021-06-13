@@ -10,10 +10,11 @@
     font-size: 3.2rem;
     text-align: center;
     line-height: 1.6em;
+    color: $branco;
   }
   &__cta {
-    background-color: $menu;
-    color: $destaque;
+    background-color: $dark-purple;
+    color: $branco;
     padding: 1em 2em;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -23,8 +24,8 @@
     cursor: pointer;
     &:hover,
     &:focus {
-      background-color: $menu-hover;
-      outline: $destaque 1px solid;
+      background-color: $purple;
+      outline: $purple 1px solid;
     }
   }
 }
