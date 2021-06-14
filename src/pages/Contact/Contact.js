@@ -13,7 +13,7 @@ const pageTransition = {
 
 const Contact = () => {
   return (
-    <motion.section className={"contact"} initial="out" animate="in" exit="out" variants={pageTransition}>
+    <motion.section initial="out" animate="in" exit="out" variants={pageTransition}>
       <h1>Contact</h1>
       <Form />
     </motion.section>

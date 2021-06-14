@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .skill {
   text-align: center;
@@ -26,7 +27,7 @@
     font-weight: 300;
     margin-bottom: 2em;
   }
-  h3 {
+  &__subtitle {
     font-size: 1.4rem;
     font-weight: 400;
     // color: $purple;
@@ -35,6 +36,18 @@
     font-size: 0.9rem;
     font-weight: 300;
     color: $purple;
-    filter: brightness(150%);
+    filter: brightness(130%);
+  }
+}
+
+@include tablet() {
+  .skill {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__icon {
+      width: 12em;
+    }
   }
 }

@@ -1,26 +1,27 @@
 @import "../../styles/variables";
-figure {
+@import "../../styles/mixins";
+
+.section {
   display: grid;
-  align-content: center;
-  background-color: $menu-hover;
-  border-radius: 10px;
-  img {
-    border-radius: 10px;
-    width: 100%;
-  }
-  figcaption {
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 0.5em 0;
-  }
+  justify-items: center;
 }
 
+.about__img {
+  border-radius: 32% 68% 64% 36% / 44% 63% 37% 36%;
+  width: 100%;
+  max-width: 40em;
+  animation: moveBorder 7s infinite ease-in-out alternate;
+  margin-bottom: 1em;
+}
 .about__text {
   text-align: center;
   font-weight: 300;
   line-height: 1.8;
   margin-top: 1em;
-  max-width: 40ch;
+  max-width: 50ch;
+  a {
+    color: $purple;
+  }
 }
 .social {
   text-align: center;
@@ -31,4 +32,19 @@ figure {
   display: flex;
   justify-content: center;
   gap: 2em;
+}
+
+@keyframes moveBorder {
+  50% {
+    border-radius: 58% 42% 70% 30% / 43% 43% 57% 57%;
+  }
+  100% {
+    border-radius: 45% 50% 31% 69% / 53% 43% 57% 48%;
+  }
+}
+
+@include tablet() {
+  .about__text {
+    max-width: 70ch;
+  }
 }

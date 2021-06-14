@@ -23,7 +23,7 @@ const Skills = () => {
         <img src={ux} alt="Icone de User Experience" className={styles.skill__icon} />
         <h2 className={styles.skill__name}>UX Design</h2>
         <p className={styles.skill__desc}>Interfaces planned using User Interface and User Experience concepts</p>
-        <h3>Tools I use</h3>
+        <h3 className={styles.skill__subtitle}>Tools I use</h3>
         <ul className={styles.skill__tools}>
           <li>Figma</li>
           <li>Adobe XD</li>
@@ -35,7 +35,7 @@ const Skills = () => {
         <img src={frontend} alt="Icone de User Experience" className={styles.skill__icon} />
         <h2 className={styles.skill__name}>Front-End Development</h2>
         <p className={styles.skill__desc}>Modern web development using the latest market tools</p>
-        <h3>Technologies</h3>
+        <h3 className={styles.skill__subtitle}>Technologies</h3>
         <ul className={styles.skill__tools}>
           <li>CSS</li>
           <li>Javascript</li>
@@ -52,7 +52,7 @@ const Skills = () => {
         />
         <h2 className={styles.skill__name}>Responsivity and Accessibility</h2>
         <p className={styles.skill__desc}>Sites that adapt to the device and accessible for PwD</p>
-        <h3>How I do it</h3>
+        <h3 className={styles.skill__subtitle}>How I do it</h3>
         <ul className={styles.skill__tools}>
           <li>Media Queries</li>
           <li>Responsive Units</li>

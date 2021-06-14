@@ -16,12 +16,9 @@ const pageTransition = {
 };
 const About = () => {
   return (
-    <motion.section initial="out" animate="in" exit="out" variants={pageTransition}>
+    <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
       <h1>About me</h1>
-      <figure>
-        <img src={leandro} alt="Foto do Leandro Torres" className={styles.about__img} />
-        <figcaption className={styles.about__caption}>Me in a trip to the country side of São Paulo, Brazil</figcaption>
-      </figure>
+      <img src={leandro} alt="Foto do Leandro Torres" className={styles.about__img} />
       <p className={styles.about__text}>
         Started in programming in 2017 with Javascript, then 3 months later I decided to do an IT Technician Course in
         Etec (A big technical school) to improve myself as a developer, there I learned some SQL, Back-End (Java, C#,

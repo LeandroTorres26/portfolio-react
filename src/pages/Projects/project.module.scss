@@ -1,5 +1,7 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
 .path a {
-  color: #fff;
+  color: $white;
   font-size: 0.8rem;
   text-decoration: underline;
 }
@@ -24,5 +26,19 @@
   }
   &__mobile {
     width: 70%;
+  }
+}
+
+@include tablet() {
+  .project {
+    &__desc {
+      max-width: 70ch;
+    }
+    &__desktop {
+      max-width: 50em;
+    }
+    &__mobile {
+      width: 20em;
+    }
   }
 }

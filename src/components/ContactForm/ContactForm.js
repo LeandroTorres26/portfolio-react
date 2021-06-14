@@ -39,7 +39,9 @@ const ContactForm = () => {
       <label>Message</label>
       <textarea type="textarea" name="message" value={toSend.message} onChange={handleChange} required></textarea>
 
-      <button type="submit">{buttonText}</button>
+      <button type="submit" className={styles.button}>
+        {buttonText}
+      </button>
     </form>
   );
 };
