@@ -1,25 +1,25 @@
 import styles from "./nav.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../image/logo-portfolio-min.svg";
 const nav = () => {
   return (
     <nav>
-      <Link to="/">
+      <NavLink activeClassName={styles.active} exact to="/">
         <img src={logo} className={styles.logo} alt="Logo Leandro Torres" />
-      </Link>
+      </NavLink>
       <ul className={styles.menu}>
-        <Link to="/projects">
+        <NavLink activeClassName={styles.active} to="/projects">
           <li className={styles.menu__item}>Projects</li>
-        </Link>
-        <Link to="/skills">
+        </NavLink>
+        <NavLink activeClassName={styles.active} to="/skills">
           <li className={styles.menu__item}>Skills</li>
-        </Link>
-        <Link to="/about">
+        </NavLink>
+        <NavLink activeClassName={styles.active} to="/about">
           <li className={styles.menu__item}>About</li>
-        </Link>
-        <Link to="/contact">
+        </NavLink>
+        <NavLink activeClassName={styles.active} to="/contact">
           <li className={styles.menu__item}>Contact</li>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );

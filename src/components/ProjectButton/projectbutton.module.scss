@@ -8,6 +8,7 @@
   cursor: pointer;
   font-family: $font;
   transition: 0.2s all ease-in-out;
+  box-sizing: border-box;
   &:hover,
   &:focus {
     box-shadow: inset 0 0 0 2em $dark-purple;

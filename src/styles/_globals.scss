@@ -43,3 +43,23 @@ h3 {
     padding: 1em 5em 10em 5em;
   }
 }
+
+@include desktop() {
+  .App {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    height: 100vh;
+    align-items: center;
+  }
+  header {
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+  }
+  main {
+    grid-column: 2/3;
+  }
+  section {
+    padding: 5em 0;
+  }
+}

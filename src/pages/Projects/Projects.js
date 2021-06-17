@@ -16,7 +16,7 @@ const pageTransition = {
 };
 const Projects = () => {
   return (
-    <motion.section className={styles.projects} initial="out" animate="in" exit="out" variants={pageTransition}>
+    <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
       <h1 className={styles.title}>Projects</h1>
       <div className={styles.project} style={{ backgroundImage: `url(${myp})` }}>
         <div className={styles.project__info}>

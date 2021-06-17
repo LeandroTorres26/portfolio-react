@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.projects {
+.section {
   display: grid;
 }
 
@@ -13,6 +13,7 @@
   height: 20em;
   border-radius: 20px;
   margin-bottom: 2em;
+  box-sizing: border-box;
 }
 .project__info {
   display: flex;
@@ -44,6 +45,20 @@
 }
 
 @include desktop() {
+  .section {
+    padding: 5em 2em;
+    grid-template-columns: auto auto;
+    gap: 1em;
+    justify-items: center;
+  }
+  .title {
+    display: none;
+  }
+  .project {
+    margin: 0;
+    width: 100%;
+    max-width: 35em;
+  }
   .project__info {
     opacity: 0;
     transition: 0.3s all ease-in-out;

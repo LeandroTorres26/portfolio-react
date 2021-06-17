@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 1em;
+  box-sizing: border-box;
   &__icon {
     width: 10em;
     margin-bottom: 2em;
@@ -47,7 +48,39 @@
     margin-right: auto;
 
     &__icon {
-      width: 12em;
+      width: 11em;
+    }
+  }
+}
+
+@include desktop() {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    padding: 5em 2em;
+  }
+  .skill {
+    width: 100%;
+    max-width: initial;
+    margin: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+    display: grid;
+    grid-template-rows: 10em 5em auto auto auto;
+    justify-items: center;
+    align-content: center;
+    gap: 1em;
+
+    &__icon {
+      margin: 0;
+    }
+    &__name {
+      margin-bottom: 0;
+    }
+    &__desc {
+      margin-bottom: 0;
     }
   }
 }

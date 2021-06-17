@@ -17,14 +17,15 @@ const pageTransition = {
 const About = () => {
   return (
     <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
-      <h1>About me</h1>
+      <h1 className={styles.title}>About me</h1>
       <img src={leandro} alt="Foto do Leandro Torres" className={styles.about__img} />
       <p className={styles.about__text}>
-        Started in programming in 2017 with Javascript, then 3 months later I decided to do an IT Technician Course in
-        Etec (A big technical school) to improve myself as a developer, there I learned some SQL, Back-End (Java, C#,
-        C++) and Front-End (HTML, CSS, Javascript). In my last year there (2018) I and my colleagues developed a website
-        as our term paper (<Link to="/projects/myp">Meet Your Pet</Link>) and I had to do some online classes in UI and
-        UX to improve the design of the project.
+        My name is Leandro Torres, born in 2000 in the coastal side of São Paulo, in a city called Santos, I started
+        programming in 2017 with Javascript, then 3 months later I decided to do an IT Technician Course in Etec (A big
+        technical school) to improve myself as a developer, there I learned some SQL, Back-End (Java, C#, C++) and
+        Front-End (HTML, CSS, Javascript). In my last year there (2018) I and my colleagues developed a website as our
+        term paper (<Link to="/projects/myp">Meet Your Pet</Link>) and I had to do some online classes in UI and UX to
+        improve the design of the project.
       </p>
       <p className={styles.about__text}>
         After graduating I decided to do an exchange program in 2020 to Ireland so I continued with my studies in
@@ -37,19 +38,21 @@ const About = () => {
         In 2021 I decided that it was time to start my professional career as a Front-End Developer, so I am currently
         looking for an opportunity while I hone my skills in UX and Development doing some fake projects.
       </p>
-      <h2 className={styles.social}>Social Media</h2>
-      <ul className={styles.icons}>
-        <li>
-          <a href="https://www.linkedin.com/in/leandro-torres-front-end/" target="_blank" rel="noreferrer">
-            <img src={linkedin} alt="Ícone do LinkedIn" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/LeandroTorres26" target="_blank" rel="noreferrer">
-            <img src={github} alt="Ícone do GitHub" />
-          </a>
-        </li>
-      </ul>
+      <div className={styles.social}>
+        <h2>Social Media</h2>
+        <ul className={styles.icons}>
+          <li>
+            <a href="https://www.linkedin.com/in/leandro-torres-front-end/" target="_blank" rel="noreferrer">
+              <img src={linkedin} alt="Ícone do LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/LeandroTorres26" target="_blank" rel="noreferrer">
+              <img src={github} alt="Ícone do GitHub" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </motion.section>
   );
 };

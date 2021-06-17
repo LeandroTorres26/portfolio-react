@@ -10,10 +10,12 @@ import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <header>
           <Nav />

@@ -14,7 +14,7 @@ const pageTransition = {
 const Contact = () => {
   return (
     <motion.section initial="out" animate="in" exit="out" variants={pageTransition}>
-      <h1>Contact</h1>
+      <h1>Send me a message {":)"}</h1>
       <Form />
     </motion.section>
   );
