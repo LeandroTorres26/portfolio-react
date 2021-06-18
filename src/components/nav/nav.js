@@ -1,9 +1,10 @@
 import styles from "./nav.module.scss";
 import { NavLink } from "react-router-dom";
 import logo from "../../image/logo-portfolio-min.svg";
+
 const nav = () => {
   return (
-    <nav>
+    <>
       <NavLink activeClassName={styles.active} exact to="/">
         <img src={logo} className={styles.logo} alt="Logo Leandro Torres" />
       </NavLink>
@@ -21,7 +22,7 @@ const nav = () => {
           <li className={styles.menu__item}>Contact</li>
         </NavLink>
       </ul>
-    </nav>
+    </>
   );
 };
 

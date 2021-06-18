@@ -48,18 +48,20 @@ h3 {
   .App {
     display: grid;
     grid-template-columns: 10em 1fr;
-    height: 100vh;
     align-items: center;
+    min-height: 100vh;
   }
   header {
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
+    position: sticky;
+    top: 5em;
   }
   main {
     grid-column: 2/3;
   }
   section {
-    padding: 5em 0;
+    padding: 5em 2em;
   }
 }

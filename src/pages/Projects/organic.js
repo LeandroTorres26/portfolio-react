@@ -15,17 +15,20 @@ const pageTransition = {
 };
 const organic = () => {
   return (
-    <motion.section initial="out" animate="in" exit="out" variants={pageTransition}>
-      <span className={styles.path}>
-        <Link to="/projects">projects/</Link>
-        <Link to="/projects/myp">organic.io</Link>
-      </span>
+    <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
       <div className={styles.project}>
-        <h1 className={styles.project__name}>Organic.io</h1>
-        <p className={styles.project__desc}>
-          Organic.io was a UI that I created as practice for my UX skills that was later developed as a website. The
-          idea was a website where you could search for fresh seasonal food near your location.
-        </p>
+        <div className={styles.project__info}>
+          <span className={styles.path}>
+            <Link to="/projects">projects/</Link>
+            <Link to="/projects/myp">organic.io</Link>
+          </span>
+
+          <h1 className={styles.project__name}>Organic.io</h1>
+          <p className={styles.project__desc}>
+            Organic.io was a UI that I created as practice for my UX skills that was later developed as a website. The
+            idea was a website where you could search for fresh seasonal food near your location.
+          </p>
+        </div>
         <img src={desktop} alt="a" className={styles.project__desktop} />
         <img src={mobile} alt="a" className={styles.project__mobile} />
       </div>
