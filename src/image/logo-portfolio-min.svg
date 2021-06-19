@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="129.5" height="91" viewBox="0 0 129.5 91"><g transform="translate(-795 -1555.5)"><line x1="129.5" transform="translate(795 1564.5)" fill="none" stroke="#07f207" stroke-width="18"/><line x2="32.5" transform="translate(827 1637.5)" fill="none" stroke="#07f207" stroke-width="18"/><line y2="76" transform="translate(835.5 1570.5)" fill="none" stroke="#07f207" stroke-width="18"/><line y2="76" transform="translate(881.5 1570.5)" fill="none" stroke="#07f207" stroke-width="18"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="129.5" height="91" viewBox="0 0 129.5 91">
+  <g id="logo-portfolio-min" transform="translate(-795 -1555.5)">
+    <line id="Linha_1" data-name="Linha 1" x1="129.5" transform="translate(795 1564.5)" fill="none" stroke="#8349ab" stroke-width="18"/>
+    <line id="Linha_2" data-name="Linha 2" x2="32.5" transform="translate(827 1637.5)" fill="none" stroke="#8349ab" stroke-width="18"/>
+    <line id="Linha_3" data-name="Linha 3" y2="76" transform="translate(835.5 1570.5)" fill="none" stroke="#8349ab" stroke-width="18"/>
+    <line id="Linha_4" data-name="Linha 4" y2="76" transform="translate(881.5 1570.5)" fill="none" stroke="#8349ab" stroke-width="18"/>
+  </g>
+</svg>

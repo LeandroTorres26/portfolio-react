@@ -30,14 +30,21 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={onSubmit} className={styles.form}>
-      <label>Name</label>
-      <input type="text" name="from_name" value={toSend.from_name} onChange={handleChange} required />
+      <label htmlFor="name">Name</label>
+      <input id="name" type="text" name="from_name" value={toSend.from_name} onChange={handleChange} required />
 
-      <label>Email</label>
-      <input type="email" name="from_email" value={toSend.from_email} onChange={handleChange} required />
+      <label htmlFor="email">Email</label>
+      <input id="email" type="email" name="from_email" value={toSend.from_email} onChange={handleChange} required />
 
-      <label>Message</label>
-      <textarea type="textarea" name="message" value={toSend.message} onChange={handleChange} required></textarea>
+      <label htmlFor="message">Message</label>
+      <textarea
+        id="message"
+        type="textarea"
+        name="message"
+        value={toSend.message}
+        onChange={handleChange}
+        required
+      ></textarea>
 
       <button type="submit" className={styles.button}>
         {buttonText}
