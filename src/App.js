@@ -11,7 +11,6 @@ import Contact from "./pages/contact/contact.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import Background from "./image/imagem-background.jpg";
 
 function App() {
   return (
