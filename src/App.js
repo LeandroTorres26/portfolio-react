@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="App" style={{ backgroundImage: "url(" + Background + ")" }}>
+      <div className="App">
         <header>
           <Nav />
         </header>

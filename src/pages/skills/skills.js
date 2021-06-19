@@ -18,7 +18,7 @@ const pageTransition = {
 const Skills = () => {
   return (
     <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
-      {/* <h1 className={styles.title}>Skills</h1> */}
+      <h1 className={styles.title}>Skills</h1>
       <div className={styles.skill}>
         <img src={ux} alt="Icone de User Experience" className={styles.skill__icon} />
         <h2 className={styles.skill__name}>UX Design</h2>

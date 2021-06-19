@@ -60,6 +60,9 @@
     grid-template-rows: 1fr;
     gap: 1em;
   }
+  .title {
+    display: none;
+  }
   .skill {
     width: 100%;
     max-width: initial;
@@ -80,6 +83,7 @@
     }
     &__desc {
       margin-bottom: 0;
+      max-width: 35ch;
     }
   }
 }

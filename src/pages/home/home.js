@@ -15,7 +15,10 @@ const pageTransition = {
 const Home = () => {
   return (
     <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
-      <h1 className={styles.home__title}>Creating enjoyable experiences</h1>
+      <div>
+        <h1 className={styles.home__title}>creating enjoyable experiences</h1>
+        <h2 className={styles.home__subtitle}>Leandro Torres, Front-End Developer</h2>
+      </div>
       <Link to="/projects">
         <button className={styles.home__cta}>Check it out!</button>
       </Link>
