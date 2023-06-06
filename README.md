@@ -1,1 +1,1 @@
-My name is Leandro Torres, I am a Junior Front-End Developer and this is my Portfolio.
+My name is Leandro Torres, I am a Front-End Developer and this is my Portfolio.
