@@ -9,18 +9,26 @@ const nav = () => {
         <img src={logo} className={styles.logo} alt="Logo Leandro Torres" />
       </NavLink>
       <ul className={styles.menu}>
-        <NavLink activeClassName={styles.active} to="/projects">
-          <li className={styles.menu__item}>Projects</li>
-        </NavLink>
-        <NavLink activeClassName={styles.active} to="/skills">
-          <li className={styles.menu__item}>Skills</li>
-        </NavLink>
-        <NavLink activeClassName={styles.active} to="/about">
-          <li className={styles.menu__item}>About</li>
-        </NavLink>
-        <NavLink activeClassName={styles.active} to="/contact">
-          <li className={styles.menu__item}>Contact</li>
-        </NavLink>
+        <li>
+          <NavLink className={styles.menu__item} activeClassName={styles.active} to="/skills">
+            Skills
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={styles.menu__item} activeClassName={styles.active} to="/work">
+            Career
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={styles.menu__item} activeClassName={styles.active} to="/projects">
+            Projects
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={styles.menu__item} activeClassName={styles.active} to="/about">
+            About
+          </NavLink>
+        </li>
       </ul>
     </>
   );

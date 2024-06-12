@@ -13,6 +13,7 @@
     color: $white;
     padding: 2em 0;
     text-align: center;
+    display: block;
     &:hover,
     &:focus {
       background-color: $menu-hover;
@@ -50,10 +51,10 @@
     &__item {
       padding: 2.5em 0.5em;
     }
-    a:first-of-type &__item {
+    li:first-of-type &__item {
       border-radius: 50px 50px 0 0;
     }
-    a:last-of-type &__item {
+    li:last-of-type &__item {
       border-radius: 0 0 50px 50px;
     }
   }
