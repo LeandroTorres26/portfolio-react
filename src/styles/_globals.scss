@@ -9,6 +9,7 @@
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,11 +53,10 @@ h3 {
     min-height: 100vh;
   }
   header {
-    grid-column: 1/2;
-    align-self: center;
-    justify-self: center;
-    position: sticky;
-    top: 5em;
+    position: fixed;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
   main {
     grid-column: 2/3;

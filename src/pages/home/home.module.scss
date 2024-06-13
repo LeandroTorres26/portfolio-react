@@ -33,8 +33,9 @@
   cursor: pointer;
   &:hover,
   &:focus {
-    background-color: $purple;
-    box-shadow: 0 0 3px 2px $purple;
+    // background-color: $purple;
+    filter: brightness(1.5);
+    transition: .5s;
   }
 }
 
@@ -49,23 +50,6 @@
   }
   .home__subtitle {
     font-size: 1.1rem;
-    text-align: center;
-  }
-  .home__cta {
-    background-color: $dark-purple;
-    color: $white;
-    padding: 1em 2em;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: $font;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-      background-color: $purple;
-      outline: $purple 1px solid;
-    }
   }
 }
 

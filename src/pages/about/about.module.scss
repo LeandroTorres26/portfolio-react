@@ -12,6 +12,14 @@
   max-width: 40em;
   animation: moveBorder 7s infinite ease-in-out alternate;
   margin-bottom: 1em;
+  @keyframes moveBorder {
+    50% {
+      border-radius: 58% 42% 70% 30% / 43% 43% 57% 57%;
+    }
+    100% {
+      border-radius: 45% 50% 31% 69% / 53% 43% 57% 48%;
+    }
+  }
 }
 .about__text {
   text-align: center;
@@ -32,15 +40,6 @@
   display: flex;
   justify-content: center;
   gap: 2em;
-}
-
-@keyframes moveBorder {
-  50% {
-    border-radius: 58% 42% 70% 30% / 43% 43% 57% 57%;
-  }
-  100% {
-    border-radius: 45% 50% 31% 69% / 53% 43% 57% 48%;
-  }
 }
 
 @include tablet() {
@@ -64,7 +63,7 @@
     }
     .about__img {
       grid-column: 2/3;
-      grid-row: 2/4;
+      grid-row: 2/5;
     }
     .about__text {
       grid-column: 1/2;
@@ -72,7 +71,7 @@
     }
     .social {
       grid-column: 2/3;
-      grid-row: 4/5;
+      grid-row: 5/6;
       margin: 0;
     }
   }
