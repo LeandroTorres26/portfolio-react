@@ -1,6 +1,5 @@
 import styles from "./work.module.scss";
 import { motion } from "framer-motion";
-import React, {useState} from "react";
 
 const pageTransition = {
   in: {
@@ -14,16 +13,8 @@ const pageTransition = {
 };
 
 const Job = () => {
-  const [toggle, setToggle] = useState(true);
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-
-  const open = toggle ? styles.open : '';
-
   return (
-    <article className={`${styles.job} ${open}`} onClick={handleClick}>
+    <article className={styles.job}>
       <h2>Front-End Developer</h2>
       <h3>N1.AG</h3>
       <p className={styles.location}>remote</p>
