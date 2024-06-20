@@ -7,15 +7,13 @@ import Delt from "./pages/projects/delt.js";
 import Organic from "./pages/projects/organic.js";
 import Skills from "./pages/skills/skills.js";
 import About from "./pages/about/about.js";
-import Contact from "./pages/contact/contact.js";
+import Work from "./pages/work/work.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <div className="App">
         <header>
           <Nav />
@@ -30,7 +28,7 @@ function App() {
               <Route path="/projects/organic" component={Organic}></Route>
               <Route path="/skills" component={Skills}></Route>
               <Route path="/about" component={About}></Route>
-              <Route path="/contact" component={Contact}></Route>
+              <Route path="/work" component={Work}></Route>
             </Switch>
           </AnimatePresence>
         </main>

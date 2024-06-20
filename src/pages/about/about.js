@@ -1,6 +1,5 @@
 import styles from "./about.module.scss";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import leandro from "../../image/minha-foto.jpg";
 import linkedin from "../../image/linkedin.svg";
 import github from "../../image/github.svg";
@@ -20,26 +19,18 @@ const About = () => {
       <h1 className={styles.title}>About me</h1>
       <img src={leandro} alt="Foto do Leandro Torres" className={styles.about__img} />
       <p className={styles.about__text}>
-        My name is Leandro Torres, born in 2000 in the coastal side of São Paulo, in a city called Santos, I started
-        programming in 2017 with Javascript, then 3 months later I decided to do an IT Technician Course in Etec (A big
-        technical school) to improve myself as a developer, there I learned some SQL, Back-End (Java, C#, C++) and
-        Front-End (HTML, CSS, Javascript). In my last year there (2018) I and my colleagues developed a website as our
-        term paper (<Link to="/projects/myp">Meet Your Pet</Link>) and I had to do some online classes in UI and UX to
-        improve the design of the project.
+        My name is Leandro Torres, a brazilian Front-End professional accustomed to solving problems, seeking new challenges as a Front-End developer or Software Engineer.
       </p>
       <p className={styles.about__text}>
-        After graduating I decided to do an exchange program in 2020 to Ireland so I continued with my studies in
-        Front-End Development and learned how to use new tools (Sass, Compass, Jquery) while I prepared everything about
-        the exchange program. Then 2020 came and I went to Ireland but had to come back 1 month later (instead of 8
-        months) due to Covid-19, so back in Brazil I resumed my studies in web development with ReactJs, NextJs, and
-        JSON.
+        I started studying programming in high school and have an IT degree similar to an associate's degree in Etec, which is one of Brazil's most prominent technical schools, there I learned the basics of Front-End, Back-End, and databases. I further honed my skills through paid courses, YouTube, forums, and developing projects.
       </p>
       <p className={styles.about__text}>
-        In 2021 I decided that it was time to start my professional career as a Front-End Developer, so I am currently
-        looking for an opportunity while I hone my skills in UX and Development doing some fake projects.
+        Worked for 2 years and 6 months in an ecommerce agency, where I implemented new pages, functionalities and improved SEO and accessibility, using jQuery, Sass and Gulp on legacy projects and React, Typescript, Next.js and Tailwind on new projects. The repositories were all on Bitbucket and all the tasks given by Trello.
+      </p>
+      <p className={styles.about__text}>
+        I thrive on hands-on learning and am adept at teaching myself new skills, I'm adept at effectively communicating technical issues to non-developers, and I'm proactive in identifying areas for improvement. While I prefer working independently, I'm also comfortable collaborating with a team.
       </p>
       <div className={styles.social}>
-        <h2>Social Media</h2>
         <ul className={styles.icons}>
           <li>
             <a href="https://www.linkedin.com/in/leandro-torres-front-end/" target="_blank" rel="noreferrer">
