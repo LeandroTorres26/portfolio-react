@@ -49,7 +49,7 @@ const Work = () => {
   return (
     <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
       <Job/>
-      <a href="https://www.linkedin.com/in/leandro-torres-front-end/" target="_blank" className={styles.newJob}>add to the list</a>
+      <a href="https://www.linkedin.com/in/leandro-torres-front-end/" rel="noreferrer" target="_blank" className={styles.newJob}>add to the list</a>
     </motion.section>
   );
 };

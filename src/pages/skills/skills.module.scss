@@ -1,89 +1,123 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.skill {
-  text-align: center;
-  background-color: $skill;
-  border-radius: 20px;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1em;
-  box-sizing: border-box;
-  &__icon {
-    width: 10em;
-    margin-bottom: 2em;
+.section {
+  h1 {
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
   }
-  &__name {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.4;
-    margin-bottom: 0.5em;
-    width: 15ch;
-    color: $purple;
+  h2 {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    margin: 1rem;
+    text-align: center;
   }
-  &__desc {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 2em;
-  }
-  &__subtitle {
-    font-size: 1.4rem;
-    font-weight: 400;
-    // color: $purple;
-  }
-  &__tools {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: $purple;
-    filter: brightness(130%);
-  }
-}
-
-@include tablet() {
-  .skill {
-    max-width: 30em;
-    margin-left: auto;
-    margin-right: auto;
-
-    &__icon {
-      width: 11em;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    li {
+      mix-blend-mode: difference;
+      padding: .5rem;
+      border-radius: .5rem;
+      background-color: $skill;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+      img {
+        width: 7rem;
+        height: 7rem;
+        object-fit: contain;
+      }
     }
   }
 }
 
-@include desktop() {
-  .section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1em;
-  }
-  .title {
-    display: none;
-  }
-  .skill {
-    width: 100%;
-    max-width: initial;
-    margin: 0;
-    padding-left: 0em;
-    padding-right: 0em;
-    display: grid;
-    grid-template-rows: 10em 5em auto auto auto;
-    justify-items: center;
-    align-content: center;
-    gap: 1em;
+// .skill {
+//   text-align: center;
+//   background-color: $skill;
+//   border-radius: 20px;
+//   padding: 2em;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-bottom: 1em;
+//   box-sizing: border-box;
+//   &__icon {
+//     width: 10em;
+//     margin-bottom: 2em;
+//   }
+//   &__name {
+//     font-size: 1.5rem;
+//     font-weight: 500;
+//     line-height: 1.4;
+//     margin-bottom: 0.5em;
+//     width: 15ch;
+//     color: $purple;
+//   }
+//   &__desc {
+//     font-size: 1rem;
+//     font-weight: 300;
+//     margin-bottom: 2em;
+//   }
+//   &__subtitle {
+//     font-size: 1.4rem;
+//     font-weight: 400;
+//     // color: $purple;
+//   }
+//   &__tools {
+//     font-size: 0.9rem;
+//     font-weight: 300;
+//     color: $purple;
+//     filter: brightness(130%);
+//   }
+// }
 
-    &__icon {
-      margin: 0;
-    }
-    &__name {
-      margin-bottom: 0;
-    }
-    &__desc {
-      margin-bottom: 0;
-      max-width: 35ch;
-    }
-  }
-}
+// @include tablet() {
+//   .skill {
+//     max-width: 30em;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     &__icon {
+//       width: 11em;
+//     }
+//   }
+// }
+
+// @include desktop() {
+//   .section {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr;
+//     gap: 1em;
+//   }
+//   .title {
+//     display: none;
+//   }
+//   .skill {
+//     width: 100%;
+//     max-width: initial;
+//     margin: 0;
+//     padding-left: 0em;
+//     padding-right: 0em;
+//     display: grid;
+//     grid-template-rows: 10em 5em auto auto auto;
+//     justify-items: center;
+//     align-content: center;
+//     gap: 1em;
+
+//     &__icon {
+//       margin: 0;
+//     }
+//     &__name {
+//       margin-bottom: 0;
+//     }
+//     &__desc {
+//       margin-bottom: 0;
+//       max-width: 35ch;
+//     }
+//   }
+// }
