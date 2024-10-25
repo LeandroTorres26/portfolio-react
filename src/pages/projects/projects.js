@@ -1,9 +1,6 @@
 import styles from "./projects.module.scss";
 import { motion } from "framer-motion";
 import BoxProject from "../../components/Project/BoxProject";
-import myp from "../../image/myp-logo.svg";
-import delt from "../../image/delt-logo.svg";
-import organic from "../../image/organic-logo.svg";
 const pageTransition = {
   in: {
     opacity: 1,
@@ -18,23 +15,31 @@ const Projects = () => {
   return (
     <motion.section className={styles.section} initial="out" animate="in" exit="out" variants={pageTransition}>
       <h1 className={styles.title}>Projects</h1>
+      <h2>Personal Projects</h2>
       <BoxProject
-        name="Meet Your Pet"
-        desc="Adoption and Relationship website for pets with built-in text chat."
-        img={myp}
-        link="myp"
+        name="Smart Recipe"
+        desc="AI-powered recipe generator using Gemini and Vue."
+        link="https://ai-smart-recipe.vercel.app/"
+        stacks={["Vue.js", "Typescript", "Gemini AI", "CSS"]}
+      />
+      <h2>Also contributed</h2>
+      <BoxProject
+        name="Technos Group"
+        desc="Ecommerces (Tecnhos, Euro Relogios, Fossil, Timecenter) for a watch Brand using VTEX."
+        link="https://www.technos.com.br/"
+        stacks={["Vtex", "Deco.cx", "JavaScript", "JQuery", "Sass", "Google Tag Manager", "Google Analytics"]}
       />
       <BoxProject
-        name="Delt"
-        desc="A fictional clothes shop with a product filter using JSON."
-        img={delt}
-        link="delt"
+        name="IRL Sports"
+        desc="Project that aims to revolutionize sport through nft."
+        link="https://www.irlsports.io/en"
+        stacks={["React", "Next.js", "TypeScript", "Sass"]}
       />
       <BoxProject
-        name="Organic.io"
-        desc="Searcher for fresh seasonal food in establishments near you."
-        img={organic}
-        link="organic"
+        name="Lojas MM"
+        desc="Ecommerce for a Retail Store using VTEX."
+        link="https://www.lojasmm.com/"
+        stacks={["VTEX", "React", "Next.js", "TypeScript", "Sass"]}
       />
     </motion.section>
   );

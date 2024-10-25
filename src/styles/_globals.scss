@@ -16,7 +16,11 @@ body {
   overflow-x: hidden;
   font-family: $font;
   background-color: $background;
-  color: $white;
+  color: $text-base;
+}
+
+.App {
+  min-block-size: 100vh;
 }
 
 section {
@@ -48,15 +52,9 @@ h3 {
 @include desktop() {
   .App {
     display: grid;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 10em 1fr;
     align-items: center;
-    min-height: 100vh;
-  }
-  header {
-    position: fixed;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
   }
   main {
     grid-column: 2/3;

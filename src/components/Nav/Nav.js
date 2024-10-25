@@ -5,9 +5,13 @@ import logo from "../../image/logo-portfolio-min.svg";
 const nav = () => {
   return (
     <>
-      <NavLink activeClassName={styles.active} exact to="/">
-        <img src={logo} className={styles.logo} alt="Logo Leandro Torres" />
-      </NavLink>
+      <ul className={styles.topbar}>
+        <li>
+          <NavLink exact to="/">
+            <img src={logo} className={styles.logo} alt="Logo Leandro Torres" />
+          </NavLink>
+        </li>
+      </ul>
       <ul className={styles.menu}>
         <li>
           <NavLink className={styles.menu__item} activeClassName={styles.active} to="/skills">

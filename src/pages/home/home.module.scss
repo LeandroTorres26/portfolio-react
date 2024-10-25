@@ -27,15 +27,12 @@
 }
 .home__title {
   width: 10ch;
-  font-size: clamp(2.5rem,4.25vw,5.5rem);
+  font-size: clamp(2.5rem,6.25vw,5.5rem);
   font-weight: 900;
   text-align: center;
   line-height: 1.5em;
-  color: $white;
+  color: $text-base;
   margin-bottom: 0.3em;
-  @include tablet() {
-      text-align: center;
-  }
   @include desktop() {
     text-align: left;
     margin: 0;
@@ -50,8 +47,8 @@
   }
 }
 .home__cta {
-  background-color: $dark-purple;
-  color: $white;
+  background-color: $accent-dark;
+  color: $text-base;
   padding: 1em 2em;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -64,7 +61,7 @@
   }
   &:hover,
   &:focus {
-    // background-color: $purple;
+    // background-color: $accent;
     filter: brightness(1.5);
     transition: .5s;
   }

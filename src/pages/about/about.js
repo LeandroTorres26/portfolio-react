@@ -1,6 +1,6 @@
 import styles from "./about.module.scss";
 import { motion } from "framer-motion";
-import leandro from "../../image/minha-foto.jpg";
+import leandro from "../../image/minha-foto.webp";
 import linkedin from "../../image/linkedin.svg";
 import github from "../../image/github.svg";
 const pageTransition = {

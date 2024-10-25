@@ -2,23 +2,14 @@
 @import "../../styles/mixins";
 
 .section {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
 }
 
-@include tablet() {
-  .section {
-    justify-content: center;
-  }
+.title {
+  display: none;
 }
 
-@include desktop() {
-  .section {
-    gap: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .title {
-    display: none;
-  }
-}
